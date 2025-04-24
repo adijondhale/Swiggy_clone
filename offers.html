@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swiggy - Offers</title>
+    <link rel="icon" href="./images/swlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top  " id="firstContainer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/Swiggy logo-2.png" alt="" style="width: 150px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./pavBhaji.html">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul> -->
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br>
+
+      <section class="container-fluid " >
+        <section class="container">
+          
+          <img src="./images/mainPic.avif" alt="" class="img-fluid my-5">
+          <div class="caro"></div>
+        </section>
+      </section>
+
+      
+    <section class="container-fluid">
+        <section class="container">
+         
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <a href="#" class="anchor mb-5">Order Online</a>
+            </div>
+            <div class="col-6 col-md-1">
+              <a href="#" class="anchor mb-5 ms-1" id="an1">Dineout</a>
+  
+            </div>
+            <hr>
+  
+            
+          </div>
+          <div class="container">
+            <div class="row row-cols-2  row-cols-md-auto g-2" id="offer_buttons">
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Filter <i class="fa fa-sliders"></i>
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Sort By <i class="fa fa-chevron-down"></i>
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Fast Delivery
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  New on Swiggy
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Ratings 4.0+
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Pure Veg
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Offers
+                </button>
+              </div>
+        
+              <div class="col">
+                <button class="btn btn-outline-secondary filter-btn">
+                  Rs. 300–Rs. 600
+                </button>
+              </div>
+        
+             
+        
+            </div>
+          </div>
+        
+        </section>
+      </section>
+      <br>
+
+      <section class="container-fluid">
+        <section class="container">
+            <div class="row align-items-center justify-content-center my-3" style="margin-left: 20 px;">
+              <div class="col-12 col-md-4 col-xl-3  mb-3">
+                <div class="card mb-2" id="offers_card" >
+                    <img src="./images/h1.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                    <div class="card-body">
+                      <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                      <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                      <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                      <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                      <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                      
+                      <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                    </div>
+                  </div>
+                  
+            </div>
+                <div class="col-12 col-md-4 col-xl-3 mb-3">
+                  <div class="card mb-2" id="offers_card" >
+                      <img src="./images/h2.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                      <div class="card-body">
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                        <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                        <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                        
+                        <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                      </div>
+                    </div>
+                    
+              </div>
+                <div class="col-12 col-md-4 col-xl-3 mb-3">
+                  <div class="card mb-2" id="offers_card" >
+                      <img src="./images/h3.jpg" class="card-img-top" alt="..." style="height: 170px;">
+                      <div class="card-body">
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                        <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                        <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                        
+                        <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                      </div>
+                    </div>
+                    
+              </div>
+                <div class="col-12 col-md-4 col-xl-3 mb-3">
+                  <div class="card mb-2" id="offers_card" >
+                      <img src="./images/h4.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                      <div class="card-body">
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                        <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                        <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                        <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                        
+                        <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                      </div>
+                    </div>
+                    
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 mb-3">
+                <div class="card mb-2" id="offers_card" >
+                    <img src="./images/h5.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                    <div class="card-body">
+                      <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                      <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                      <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                      <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                      <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                      
+                      <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="col-12 col-md-4 col-xl-3 mb-3">
+              <div class="card mb-2" id="offers_card" >
+                  <img src="./images/h6.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                  <div class="card-body">
+                    <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                    <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                    <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                    <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                    <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                    
+                    <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                  </div>
+                </div>
+                
+          </div>
+          <div class="col-12 col-md-4 col-xl-3 mb-3">
+            <div class="card mb-2" id="offers_card" >
+                <img src="./images/h7.jpg" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+                <div class="card-body">
+                  <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                  <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                  <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                  <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                  <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                  
+                  <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+                </div>
+              </div>
+              
+        </div>
+        <div class="col-12 col-md-4 col-xl-3 mb-3">
+          <div class="card mb-2" id="offers_card" >
+              <img src="./PavBHaji/p3.avif" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+              <div class="card-body">
+                <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+                <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+                <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+                <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+                
+                <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+              </div>
+            </div>
+            
+      </div>
+      <div class="col-12 col-md-4 col-xl-3 mb-3">
+        <div class="card mb-2" id="offers_card" >
+            <img src="./PavBHaji/p12.avif" class="card-img-top img-fluid" alt="..." style="height: 170px;">
+            <div class="card-body">
+              <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+              <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+              <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+              <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+              <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+              
+              <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+            </div>
+          </div>
+          
+    </div>
+    <div class="col-12 col-md-4 col-xl-3 mb-3">
+      <div class="card mb-2" id="offers_card" >
+          <img src="./PavBHaji/p10.avif" class="card-img-top " alt="...">
+          <div class="card-body">
+            <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+            <p class="card-text" id="card_line_height" >Fast Food Beverages <span style="margin-left: 50px;">₹700 for two</span></p>
+            <p class="table_booking"><i class="fa-solid fa-calendar" style="margin-right: 5px;"></i>Table booking</p>
+            <p class="Card_Flat"><i class="fa-solid fa-circle-check"></i>&nbsp;Flat 100% off on walk-in <span style="margin-left: 30px;">+1</span> </p>
+            <p class="Card_Flat_bank">Up to 10% off with bank offers  </p>
+            
+            <p class="card_blue_text">Get extra ₹100 using JUPITERUPI100</small></p>
+          </div>
+        </div>
+        
+  </div>
+            </div>
+            
+        </section>
+      </section>
+
+     
+  
+      <section class="container-fluid my-5" >
+        <!-- <section class="container"> -->
+          <h4 class="my-2"><b>Food culture in Pune</b></h4>
+          <div class=""style="border:2px solid gray; border-radius:10px;padding: 10px; ">
+            <h4 style="color:gray;">Why Choose Swiggy to Order Food Online in Pune?</h4>
+            <p style="font-weight: 500;">As a working professional, it is given for a fact that you must be too busy during the week and eventually feel sluggish during the weekends. Living in a city like Pune makes it incredibly simple and convenient to pick up the phone and place an order. You may order food online in Pune via Swiggy, which delivers nutritious, delicious, and affordable meals to your house. As a result, you may enjoy a tasty dinner from anywhere and at any time.</p>
+          </div>
+        <!-- </section> -->
+      </section>
+
+      <section class="container-fluid my-5">
+      <img src="./images/app_download_dweb_new.png" class="img-fluid"  alt="">
+    </section>
+
+    <section class="container-fluid" id="offer_buttons">
+      <section class="container">
+        <section class="container">
+        <div class="row my-5">
+          <h4 style="font-size: 20px; font-weight: 800;">Explore Localities in Pune</h4>
+
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href="./index2.html"><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Thergaon </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Khadakwal </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Wakad </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Vayre BK </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Vadgaon Peer </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Fulgaon </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Lonikand </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Ghotondi </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Kanhur</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Kolwadi</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Manjal Asani</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px;color: orangered;">Show More <i class="fa-solid fa-angle-down"></i></button></a>
+      </div>
+
+        </div>
+
+      </section>
+        
+
+      </section>
+      
+    </section>
+
+    <section class="container-fluid"  id="offer_buttons">
+      <section class="container">
+        <section class="container">
+        <div class="row my-5">
+          <h4 style="font-size: 20px; font-weight: 800;">Order Popular Cuisines Online in Thergaon</h4>
+
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href="./index2.html"><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Afghani Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">American Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Andhra Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Arabian Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Asian Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Assamese Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Awadhi Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Bakery Food </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Bangladeshi Food</button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px;font-size: 15px;">Barbecue Food</button></a>
+  </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;font-size: 15px;">Bengali Food</button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:50px;color: orangered;">Show More <i class="fa-solid fa-angle-down"></i></button></a>
+      </div>
+
+        </div>
+
+      </section>
+        
+
+      </section>
+      
+    </section>    
+    <section class="container-fluid"  id="offer_buttons">
+      <section class="container">
+        <section class="container">
+        <di class="row my-5">
+          <h4 style="font-size: 20px; font-weight: 800;">Order Popular Dishes Online in Thergaon</h4>
+
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px;font-size: 14px;">Sabudana Wada </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Chai </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Poha </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Biryani Rice </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Tandoori Roti </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Beef Fry </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Idli Sambar </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Hot Chocolate </button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Fried Rice</button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; height:50px">Steak</button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 170px; height:50px">Pei Peri Fries</button></a>
+       </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons" style="width: 147px; color: orangered; height:50px">Show More <i class="fa-solid fa-angle-down"></i></button></a>
+      </div>
+
+        </di
+
+      </section>
+    
+
+      </section>
+  
+    </section>    <section class="container-fluid "  id="offer_buttons">
+      <section class="container">
+        <section class="container">
+        <div class="row my-5">
+          <h4 style="font-size: 20px; font-weight: 800;">More Food Online Options Near Me</h4>
+
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px; ">Afghani food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px; margin-left: 4px;">American food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px">Andhra food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px;margin-left: 4px;">Arabian food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px">Asian food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px;margin-left: 4px;">Assamese food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px">Awadhi food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px;margin-left: 4px;">Bakery food near me </button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px">Bangladeshi food near me</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px;margin-left: 4px;">Barbecue food near me</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px">Bengali food near me</button></a>
+      </div>
+      <div class="col-6 col-md-4 col-xl-3 my-2">
+        <a href=""><button class="btn btn-outline-secondary buttons " style="width: 147px; height:65px ;color: orangered;margin-left: 4px;">Show More <i class="fa-solid fa-angle-down"></i></button></a>
+      </div>
+
+        </div>
+
+      </section>
+        
+
+      </section>
+      
+    </section>
+
+  
+      <section class="container">
+  
+      </section>
+      <footer class="bg-light pt-5 border-top align-items-center" style="width: 100%;">
+        <div class="container text-muted">
+      
+          <div class="row text-start gy-4">
+      
+            <!-- Logo + Copyright -->
+            <div class="col-md-3">
+              <img src="./images/swlogo.png" alt="Swiggy Logo" style="width: 120px;border-radius: 20px;">
+              <p class="mt-2 mb-0">© 2025 Swiggy Limited</p>
+            </div>
+
+            <!-- Company -->
+            <div class="col-6 col-md-2">
+              <h6 class="fw-bold">Company</h6>
+              <ul class="list-unstyled small">
+                <li>About Us</li>
+                <li>Swiggy Corporate</li>
+                <li>Careers</li>
+                <li>Team</li>
+                <li>Swiggy One</li>
+                <li>Swiggy Instamart</li>
+                <li>Swiggy Dineout</li>
+                <li>Swiggy Genie</li>
+                <li>Minis</li>
+                <li>Pyng</li>
+              </ul>
+            </div>
+      
+            <!-- Contact us + Legal -->
+            <div class="col-6 col-md-2">
+              <h6 class="fw-bold">Contact us</h6>
+              <ul class="list-unstyled small">
+                <li>Help & Support</li>
+                <li>Partner with us</li>
+                <li>Ride with us</li>
+              </ul>
+              <h6 class="fw-bold mt-3">Legal</h6>
+              <ul class="list-unstyled small">
+                <li>Terms & Conditions</li>
+                <li>Cookie Policy</li>
+                <li>Privacy Policy</li>
+                <li>Investor Relations</li>
+              </ul>
+            </div>
+      
+            <!-- Available in -->
+            <div class="col-6 col-md-2">
+              <h6 class="fw-bold">Available in:</h6>
+              <ul class="list-unstyled small">
+                <li>Bangalore</li>
+                <li>Gurgaon</li>
+                <li>Hyderabad</li>
+                <li>Delhi</li>
+                <li>Mumbai</li>
+                <li>Pune</li>
+              </ul>
+              <select class="form-select form-select-sm w-75 mt-2">
+                <option>679 cities</option>
+              </select>
+            </div>
+      
+            <!-- Life at Swiggy -->
+            <div class="col-6 col-md-2">
+              <h6 class="fw-bold">Life at Swiggy</h6>
+              <ul class="list-unstyled small">
+                <li>Explore with Swiggy</li>
+                <li>Swiggy News</li>
+                <li>Snackables</li>
+              </ul>
+      
+              <h6 class="fw-bold mt-3">Social Links</h6>
+              <div class="d-flex gap-2">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-pinterest"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom App Section -->
+          <div class="text-center py-4 border-top mt-5">
+            <h6 class="fw-bold">For better experience, <span class="text-dark">download the Swiggy app now</span></h6>
+            <div class="d-flex justify-content-center gap-3 mt-2">
+              <img src="./images/googleplay.avif" alt="Google Play" height="50">
+              <img src="./images/App.avif" alt="App Store" height="50">
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

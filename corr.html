@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <section class="container-fluid" id="help_container">
+        <section class="container">
+          <h1>Help & Support</h1>
+          <p>Let's take a step ahead and help you better.</p>
+      
+          <div class="d-flex align-items-start" style="background-color: #edf1f7; height: 650px;">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                aria-selected="true">
+                <span style="font-size: 14px;">Partner Onboarding</span>
+              </button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="false">
+                <span style="font-size: 14px;">Legal</span>
+              </button>
+              <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq"
+                aria-selected="false">
+                <span style="font-size: 14px;">FAQs</span>
+              </button>
+              <button class="nav-link" id="v-pills-instamart-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-instamart" type="button" role="tab" aria-controls="v-pills-instamart"
+                aria-selected="false">
+                <span style="font-size: 14px;">Instamart Onboarding</span>
+              </button>
+              <button class="nav-link" id="v-pills-irctc-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-irctc" type="button" role="tab" aria-controls="v-pills-irctc"
+                aria-selected="false">
+                <span style="font-size: 14px;">IRCTC FAQ</span>
+              </button>
+            </div>
+      
+            <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
+              <!-- Partner Onboarding Tab -->
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                aria-labelledby="v-pills-home-tab" tabindex="0"
+                style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 650px;">
+                <h4 class="ms-3">Partner Onboarding</h4>
+                <div class="dropdown_text"><p>I want to partner my restaurant with strategy</p></div>
+                <hr />
+                <div class="dropdown_text"><p>I want to opt-out from Google services</p></div>
+                <hr />
+                <div class="dropdown_text"><p>What are the mandatory documents needed to list my restaurant on Swiggy?</p></div>
+                <hr />
+                <div class="dropdown_text"><p>What is this one-time onboarding fee?</p></div>
+                <hr />
+                <div class="dropdown_text"><p>Who should I contact for help with onboarding?</p></div>
+                <hr />
+              </div>
+      
+              <!-- Legal Tab -->
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                aria-labelledby="v-pills-profile-tab" tabindex="0"
+                style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                <h4 class="ms-3">Legal Information</h4>
+                <p class="ms-3">Legal policies, terms of service, privacy agreements, and compliance details will appear here.</p>
+                <div class="dropdown_text"><p>I want to partner my restaurant with strategy</p></div>
+                <hr />
+                <div class="dropdown_text"><p>I want to opt-out from Google services</p></div>
+                <hr />
+                <div class="dropdown_text"><p>What are the mandatory documents needed to list my restaurant on Swiggy?</p></div>
+                <hr />
+                <div class="dropdown_text"><p>What is this one-time onboarding fee?</p></div>
+                <hr />
+                <div class="dropdown_text"><p>Who should I contact for help with onboarding?</p></div>
+                <hr />
+              </div>
+      
+              <!-- FAQs Tab -->
+              <div class="tab-pane fade" id="v-pills-faq" role="tabpanel"
+                aria-labelledby="v-pills-faq-tab" tabindex="0"
+                style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                <h4 class="ms-3">Frequently Asked Questions</h4>
+                <p class="ms-3">Common questions and answers for customers and partners.</p>
+              </div>
+      
+              <!-- Instamart Tab -->
+              <div class="tab-pane fade" id="v-pills-instamart" role="tabpanel"
+                aria-labelledby="v-pills-instamart-tab" tabindex="0"
+                style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                <h4 class="ms-3">Instamart Onboarding</h4>
+                <p class="ms-3">Information for vendors interested in joining Instamart.</p>
+              </div>
+      
+              <!-- IRCTC FAQ Tab -->
+              <div class="tab-pane fade" id="v-pills-irctc" role="tabpanel"
+                aria-labelledby="v-pills-irctc-tab" tabindex="0"
+                style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                <h4 class="ms-3">IRCTC FAQ</h4>
+                <p class="ms-3">Support for food orders related to IRCTC train journeys.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

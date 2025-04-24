@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swiggy-PavBHaji</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/swlogo.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body{
+        background-color: blueviolet;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  " id="navbar">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/logosSecond.jpg"
+          style="width: 50px; height: 50px; border-radius: 20px; margin-left: 20px;"
+          alt="logo"
+        />
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-2">
+          <a class="nav-link active" href="./pavBhaji.html">Home</a>
+          <a class="nav-link" href="./offers.html"><i class="fa-solid fa-circle-check"></i>&nbsp;Offers</a>
+          <!-- <a class="nav-link" href="./help.html"><i class="fa-solid fa-handshake-angle"></i>&nbsp;Help</a> -->
+    
+        
+          <a class="nav-link btn   ms-2" data-bs-toggle="offcanvas" href="#offcanvasSignin" role="button"
+            aria-controls="offcanvasSignin" style="color: black;">
+            <i class="fa-regular fa-user"></i>&nbsp;Sign In
+          </a>
+    
+         
+          <!-- <a class="nav-link ms-2"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</a> -->
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSignin" aria-labelledby="offcanvasSigninLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasSigninLabel" >Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Welcome! Please sign in to continue.</p>
+      
+        <form>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="enter password">
+          </div>
+          <button type="submit" class="btn btn-success">Sign In</button>
+        </form>
+      </div>
+    </div>
+    
+
+
+    <section class="container-fluid " id="help_container" style="margin-top: -89px;">
+        <section class="container">
+            <h1>Help & Support</h1>
+            <p>Let's take a step ahead and help you better.</p>
+
+            <div class="d-flex align-items-start" style="background-color: #edf1f7; height: 650px;">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                  aria-selected="true">
+                  <span style="font-size: 14px;">Partner Onboarding</span>
+                </button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                  aria-selected="false">
+                  <span style="font-size: 14px;">Legal</span>
+                </button>
+                <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq"
+                  aria-selected="false">
+                  <span style="font-size: 14px;">FAQs</span>
+                </button>
+                <button class="nav-link" id="v-pills-instamart-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-instamart" type="button" role="tab" aria-controls="v-pills-instamart"
+                  aria-selected="false">
+                  <span style="font-size: 14px;">Instamart Onboarding</span>
+                </button>
+                <button class="nav-link" id="v-pills-irctc-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-irctc" type="button" role="tab" aria-controls="v-pills-irctc"
+                  aria-selected="false">
+                  <span style="font-size: 14px;">IRCTC FAQ</span>
+                </button>
+              </div>
+        
+              <div class="tab-content" id="v-pills-tabContent" style="width: 100%;">
+                <!-- Partner Onboarding Tab -->
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab" tabindex="0"
+                  style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 650px;">
+                  <h4 class="ms-3">Partner Onboarding</h4>
+                  <div class="dropdown_text"><p>I want to partner my restaurant with strategy</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>I want to opt-out from Google services</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>What are the mandatory documents needed to list my restaurant on Swiggy?</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>What is this one-time onboarding fee?</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>Who should I contact for help with onboarding?</p></div>
+                  <hr />
+                </div>
+        
+                <!-- Legal Tab -->
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab" tabindex="0"
+                  style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                  <h4 class="ms-3">Legal Information</h4>
+                  <p class="ms-3">Legal policies, terms of service, privacy agreements, and compliance details will appear here.</p>
+                  <div class="dropdown_text"><p>I want to partner my restaurant with strategy</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>I want to opt-out from Google services</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>What are the mandatory documents needed to list my restaurant on Swiggy?</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>What is this one-time onboarding fee?</p></div>
+                  <hr />
+                  <div class="dropdown_text"><p>Who should I contact for help with onboarding?</p></div>
+                  <hr />
+                </div>
+        
+                <!-- FAQs Tab -->
+                <div class="tab-pane fade" id="v-pills-faq" role="tabpanel"
+                  aria-labelledby="v-pills-faq-tab" tabindex="0"
+                  style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                  <h4 class="ms-3">Frequently Asked Questions</h4>
+                  <p class="ms-3">Common questions and answers for customers and partners.</p>
+                </div>
+        
+                <!-- Instamart Tab -->
+                <div class="tab-pane fade" id="v-pills-instamart" role="tabpanel"
+                  aria-labelledby="v-pills-instamart-tab" tabindex="0"
+                  style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                  <h4 class="ms-3">Instamart Onboarding</h4>
+                  <p class="ms-3">Information for vendors interested in joining Instamart.</p>
+                </div>
+        
+                <!-- IRCTC FAQ Tab -->
+                <div class="tab-pane fade" id="v-pills-irctc" role="tabpanel"
+                  aria-labelledby="v-pills-irctc-tab" tabindex="0"
+                  style="margin-left: 20px; background-color: rgba(195, 76, 195, 0.1); height: 517px;">
+                  <h4 class="ms-3">IRCTC FAQ</h4>
+                  <p class="ms-3">Support for food orders related to IRCTC train journeys.</p>
+                </div>
+              </div>
+            </div>
+              </div>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Swiggy-PavBHaji</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/swlogo.png">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  " id="navbar">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/logosSecond.jpg"
+          style="width: 50px; height: 50px; border-radius: 20px; margin-left: 20px;"
+          alt="logo"
+        />
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-2">
+          <a class="nav-link active" href="./index.html">Home</a>
+          <a class="nav-link" href="./offers.html"><i class="fa-solid fa-circle-check"></i>&nbsp;Offers</a>
+          <a class="nav-link" href="./help.html"><i class="fa-solid fa-handshake-angle"></i>&nbsp;Help</a>
+    
+        
+          <a class="nav-link btn   ms-2" data-bs-toggle="offcanvas" href="#offcanvasSignin" role="button"
+            aria-controls="offcanvasSignin" style="color: black;">
+            <i class="fa-regular fa-user"></i>&nbsp;Sign In
+          </a>
+    
+         
+          <!-- <a class="nav-link ms-2"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</a> -->
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSignin" aria-labelledby="offcanvasSigninLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasSigninLabel" >Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Welcome! Please sign in to continue.</p>
+      
+        <form>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="enter password">
+          </div>
+          <button type="submit" class="btn btn-success">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="container-fluid">
+      <section class="container">
+        <h2>Pav&nbsp;Bhaji</h2>
+        <p
+          style="
+            font-size: 18px;
+            opacity: 0.9;
+            margin-top: 8px;
+            max-width: 800px;
+          "
+        >
+        Flavourful Pav Bhaji that will remind you of the streets of Mumbai in every bite.
+        </p>
+        <div class="butto col-2 " style="display: flex;">
+          <button class="btn btn-outline-secondary filter-btn me-2">
+            Filter <i class="fa fa-sliders"></i>
+          </button>
+          <button class="btn btn-outline-secondary filter-btn me-2">
+            Sort By <i class="fa fa-chevron-down"></i>
+          </button>
+          <button class="btn btn-outline-secondary filter-btn me-2" id="pavbhaji_long_button" style="width: 140px;">
+            10 Mins Delivery 
+          </button>
+        </div>
+
+        <h3 style="font-size: 20px;margin-top: 10px;"><b>Restaurants to explore</b></h3>
+      </section>
+    </section>
+
+    <section class="container-fluid">
+        <section class="container">
+          <div class="row">
+            <!-- <h3 class="mb-2" style="font-weight: 800; font-size: 24px;">Top Restaurant In Pune</h3> -->
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p1.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              
+              <h5 class="ms-3 mt-3"><b>Domino'z Pizza</b></h5>
+              
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+              
+            
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p2.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Burger King  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3 ">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p3.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Chinese Wok</b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p4.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p5.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div><div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p6.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div><div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p7.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div><div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p8.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div><div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p9.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+              <img src="./PavBHaji/p10.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+              <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+              
+              <div class="d-flex align-items-center ms-3 mt-2 ">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+              </div>
+  
+              <p class="ms-3">Pizza, Fast Food</p>
+              <p class="ms-3">Pimpri</p>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p11.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div> <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p12.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div> <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p2.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div> <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p3.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div> <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p6.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div> <div class="col-6 col-md-4 col-xl-3" style="line-height: 20px;">
+                <img src="./PavBHaji/p7.avif" class="img-fluid my-2 pizza_img" style="border-radius: 20px; width: 312px; height: 207px;" alt="">
+                <h5 class="ms-3 mt-3"><b>Full Course Meal  </b></h5>
+                
+                <div class="d-flex align-items-center ms-3 mt-2 ">
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <span style="margin-left: 8px;">4.2 • 20-25 mins</span>
+                </div>
+    
+                <p class="ms-3">Pizza, Fast Food</p>
+                <p class="ms-3">Pimpri</p>
+              </div>
+          </div>
+        </section>
+      </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

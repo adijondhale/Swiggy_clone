@@ -1,0 +1,435 @@
+
+body::-webkit-scrollbar {
+    width: 1px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1; 
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; 
+  }
+  
+  
+  
+  
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#firstContainer{
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+    
+}
+header{
+    height: 80px;
+    margin: 0;
+   
+    display: flex;
+}
+nav{
+    display: flex;
+    position: relative;
+}
+.logo-img{
+    /* width: 100px; */
+    height: 50px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+nav h5{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#drop{
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    width: 100%;
+    font-size: 17px;
+    background-color: white;
+    
+    border: none;
+}
+.search-bar{
+    width: 360px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.user1{
+
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(166, 174, 174);
+    z-index: 1;
+}
+.user{
+    z-index: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+.main-img{
+    width: 80%;
+  
+    margin: auto;
+   
+    height: 500px;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.anchor{
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    font-size: 22px;
+    
+}
+#an1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.anchor:hover{
+
+    text-decoration: none;
+    border-bottom: 3px solid orange;
+}
+.mind_center img:hover{
+    text-decoration: none;
+    border-bottom: 3px solid orange;
+    background-color: yellow;
+
+}
+#mind-cont img:hover{
+    text-decoration: none;
+    border-bottom: 3px solid orange;
+    background-color: yellow;
+
+}
+
+.pizza_img:hover{
+    transform: scale(1,1.1);
+
+
+}
+.filter-btn {
+    border-radius: 50rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+ .buttons{
+    background-color: rgba(255, 244, 244, 0.699);
+    color: black;
+    font-weight: 600;
+ }
+ .buttons:hover{
+    background-color: rgba(255, 244, 244, 0.699);
+    color: black;
+    font-weight: 600;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+ }
+ /* #navbar{ */
+    /* width: 100/%; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin-top: 20px; */
+    /* margin-left: 80px; */
+    /* margin-right: 80px; */
+    /* margin-bottom: 20px;     */
+    /* padding: 10px 30px; */
+ /* } */
+
+ /* #navbar a{ */
+    /* width: 80%; */
+    /* margin: auto; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 10px;
+ } */
+ /* #navbarNavAltMarkup {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centers the nav links horizontally */
+  /* } */
+ 
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px; /* optional spacing between links */
+  }
+  #navbar{
+
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);;
+    margin-bottom: 90px;
+
+  }
+  
+  .navbar-nav a {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+  }
+  #navbar a:hover {
+    /* text-decoration: none; */
+    border-bottom: 3px solid orange;
+    /* background-color: rgb(205, 205, 119); */
+    color: orangered;
+  }
+  
+  .butto button{
+    background-color: rgba(255, 244, 244, 0.837);
+    width: 122px;
+  }
+  #offer_buttons button{
+    border-radius: 30px;
+    margin-left: 10px;
+   
+  }
+  #offer_buttons button:hover{
+    background-color: cornsilk;
+    color: black;
+    transform: scale(1.1,1.1);
+  }
+
+  #offers_card{
+   width: 239px;
+   height: 420px;
+   /* text-align: center; */
+   text-wrap: wrap;
+   transition-duration: 2s;
+
+  }
+  #offers_card:hover{
+    border-radius: 30px;
+
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(124, 7, 226, 0.31);
+
+  }
+  #card_line_height{
+    line-height: 4px;
+    font-size: 10px;
+}
+.table_booking{
+    width: 110px;
+    height: 21px;
+    background-color:#F0F0F5;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-align: center;
+    
+    font-size: 12px;
+    
+   
+    /* padding: 10px 30px; */
+}
+.Card_Flat{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(27, 166, 114);
+    color: white;
+    font-weight:600px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-family: gilroy;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card_Flat_bank{
+    width: 100%;
+    height: 30px;
+    background-color: #c8f9e5;
+    color: #1BA672;
+    font-weight:600px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    font-family: gilroy;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_blue_text{
+    font-family: poppins;
+    color: rgb(81, 52, 182);
+    font-size: 13px;
+}
+#offer_buttons button{
+    background-color: rgba(255, 244, 244, 0.699);
+    color: black;
+    font-weight: 600;
+}
+#offer_buttons button:hover{
+    background-color: rgba(255, 244, 244, 0.699);
+    color: black;
+    font-weight: 600;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s ease-in-out;
+}
+/* #help_container{
+    background-color: #37718e;
+    height: 100vh;
+    width: 90%;
+    margin-bottom: 20px;
+} */
+/* #help_container button{ */
+    /* padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 10px; */
+    /* width: 245px;
+    height: 70px;
+    padding: 25px 20px;
+    margin: 0 0 0 20px;
+    background-color:#edf1f7 ; */
+/* } */
+/* #help_container button:hover{
+    background-color:white;
+}
+#help_container button span{
+    width: 150px;
+    height: 20px;
+    color: #02062C;
+    margin: 0px 0px 0px 40px;
+ 
+} */
+.dropdown_text{
+    display: flex;
+    font-size: 14px;
+    text-align: left;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 10px;
+}
+.dropdown_text:hover{
+    color: orangered;
+}
+#drop_Angle_down{
+    margin-right: 10px;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(0, 0, 0, 0.6); */
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+  .carousel-caption {
+    bottom: 20%;
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 1.5rem; 
+    color: #fff;
+    
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-caption h2 {
+      font-size: 2.5rem;
+    }
+  }
+    
+@media (min-width:320px) and (max-width: 768px) {
+    #card_line_height {
+        line-height: 4px;
+        font-size: 9px;
+    }
+    .table_booking {
+        width: 137px;
+        height: 21px;
+        background-color: #F0F0F5;
+        padding: 2px 8px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .Card_Flat {
+        width: 105%;
+        height: 30px;
+        background-color: rgb(27, 166, 114);
+        color: white;
+        font-weight: 600px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        font-family: gilroy;
+        border-radius: 30px;
+        display: flex
+    ;
+        align-items: center;
+        justify-content: cente
+  }
+  #offers_card{
+    width: 239px;
+    height: 420px;
+    /* text-align: center; */
+    text-wrap: wrap;
+    transition-duration: 2s;
+    margin-left: 70px;
+ 
+   }
+   #pavbhaji_long_button{
+    width: 120px;
+    font-size: 11px;
+    margin-left: -4px;
+   }
+}
